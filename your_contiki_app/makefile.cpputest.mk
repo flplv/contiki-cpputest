@@ -6,7 +6,7 @@ else
 endif
 
 #---- Outputs ----#
-COMPONENT_NAME = dot_firmware
+COMPONENT_NAME = your_contiki_app
 TARGET_LIB = $(COMPONENT_NAME).native.a
 CONTIKI_LIB = contiki-native.a
 TEST_TARGET = $(COMPONENT_NAME)_tests

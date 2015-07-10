@@ -1,27 +1,22 @@
 .PHONY: tests
 
 
-CONTIKI_PROJECT=dot_firmware
+CONTIKI_PROJECT=your_contiki_app
 all: $(CONTIKI_PROJECT) 
 
 CONTIKI=../contiki
-APPS = mqtt-service
+APPS = 
 
 CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\" $(CPPUTEST_CFLAGS)
 
 
 PROJECT_SOURCEFILES += \
-	cli.c \
-	network.c \
-	cmd_table.c \
-	mqtt_client.c \
-	mqtt_buf.c \
-	mqtt_topics.c \
-	shared.c
+	your_contiki_app.c
 	
 ifndef MAKE_CONTIKI_LIB
 PROJECT_SOURCEFILES += \
-	slip-bridge.c
+	
+# Files that will be built in non testing binary
 endif
 	
 	
